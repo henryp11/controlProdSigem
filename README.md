@@ -1,1 +1,1 @@
-# Getting Started with Create React App, esta versión funciona con react router DOM V4, es vversión antigua porque no permitia leer la app desde un subdominio. Por eso se procedió con la actualización de la librería y hacer los respectivos cambios pero en otro proyecto.
+## Getting Started with Create React App, esta versión funciona con react router DOM V4, es versión antigua porque no permitia leer la app desde un subdominio. Por eso se procedió con la actualización de la librería y hacer los respectivos cambios pero en otro proyecto.
