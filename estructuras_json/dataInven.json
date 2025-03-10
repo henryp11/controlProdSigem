@@ -1,0 +1,31 @@
+{
+  "inventario": [
+    {
+      "id": "E1TRM55F1-A000",
+      "descrip": "ET.TQM TERMICO RECUBIERTO RECT. 7.6x10.2 F1 NC",
+      "cantActual": "500",
+      "unidMed": "Miles",
+      "cantFisica": "",
+      "observInv": "",
+      "fechaRegistro": ""
+    },
+    {
+      "id": "E1TRM55F1-A020",
+      "descrip": "ET.TQM TERMICO RECUBIERTO RECT. 7.6x10.2 F1 1C",
+      "cantActual": "30",
+      "unidMed": "Miles",
+      "cantFisica": "28",
+      "observInv": "",
+      "fechaRegistro": ""
+    },
+    {
+      "id": "E1TRM55F1-A011",
+      "descrip": "ET.TQM TERMICO RECUBIERTO RECT. 7.6x10.2 F1 2C",
+      "cantActual": "100",
+      "unidMed": "Miles",
+      "cantFisica": "",
+      "observInv": "",
+      "fechaRegistro": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "materiasPrimas": [
+    {
+      "id": "ANDTR10.8-M",
+      "nombreMP": "Papel termico recubierto andi 10.8"
+    },
+    {
+      "id": "ARTR7.1-M",
+      "nombreMP": "Papel termico recubierto arc 7.1"
+    },
+    {
+      "id": "ARTR9.9-M",
+      "nombreMP": "Papel termico recubierto arc 9.9"
+    },
+    {
+      "id": "ARTR8.2-M",
+      "nombreMP": "Papel termico recubierto arc 8.2"
+    },
+    {
+      "id": "ANTR10.7-M",
+      "nombreMP": "Papel termico recubierto andi 10.7"
+    }
+  ]
+}

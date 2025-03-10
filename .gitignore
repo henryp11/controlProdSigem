@@ -24,7 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 
 #tests locales
-estructuras_json
 certificados
 localhost.crt
 localhost.key
