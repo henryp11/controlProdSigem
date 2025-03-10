@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?jsn33j");
+  src: url("fonts/icomoon.eot?jsn33j#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?jsn33j") format("truetype"),
+    url("fonts/icomoon.woff?jsn33j") format("woff"),
+    url("fonts/icomoon.svg?jsn33j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-microsoftexcel:before {
+  content: "\e901";
+  color: #217346;
+}
+.icon-home:before {
+  content: "\e900";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-floppy-disk:before {
+  content: "\e962";
+}
+.icon-undo2:before {
+  content: "\e967";
+}
+.icon-binoculars:before {
+  content: "\e985";
+}
+
+.icon-search {
+  display: flex;
+  transform: rotate(90deg);
+  justify-content: center;
+}
+
+.icon-search:before {
+  content: "\e986";
+  font-weight: bold;
+  font-size: 24px;
+  color: #2b516f;
+  text-align: center;
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-unlocked:before {
+  content: "\e990";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-exit:before {
+  content: "\ea14";
+  padding-left: 6px;
+}
+.icon-circle-up:before {
+  content: "\ea41";
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+}
+.icon-circle-left:before {
+  content: "\ea44";
+}
+.icon-checkbox-checked:before {
+  content: "\ea52";
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+
+@media screen and (max-width: 768px) {
+  .icon-search::before {
+    font-size: 20px;
+  }
+}

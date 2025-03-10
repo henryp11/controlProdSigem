@@ -1,0 +1,388 @@
+.listaOT {
+  overflow-x: scroll;
+}
+
+.listaOT_container {
+  max-width: 98%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+  padding: 1em 0.5em;
+  text-align: center;
+}
+
+ol {
+  padding-inline-start: 20px;
+}
+
+span {
+  padding: 5px;
+  word-wrap: break-word;
+}
+.listaOT_container li:first-child {
+  background: #232d41ea;
+  color: white;
+  font-weight: bold;
+}
+
+.listaOt_item li:first-child {
+  background: #354a70ea;
+}
+
+.listaOt_item {
+  width: 100%;
+  /* background-color: rgb(218, 218, 218); */
+  background-color: rgb(233, 250, 200);
+  list-style: none;
+  font-weight: 500;
+  border: 1px solid grey;
+}
+
+.listaPT_item {
+  background: rgb(231, 231, 231);
+}
+
+/* Indicado de bloqueo de campos */
+.listaPT_item--block {
+  background: rgba(239, 85, 126, 0.7);
+}
+
+.listaMP_item {
+  background: rgb(252, 252, 252);
+  color: black;
+  /* font-size: 1.1em; */
+}
+
+.listaOt_item_container {
+  display: grid;
+  grid-template-columns: repeat(3, 9%) 20% repeat(2, 10%) 18% 1fr;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+#column2 {
+  grid-column: span 2;
+}
+
+.listaOt_item_edit {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.PT_container {
+  /* grid-template-columns: 15% 35% repeat(3, 8%) repeat(2, 10%); */
+  grid-template-columns: auto 35% repeat(3, 8%) repeat(2, 10%);
+}
+
+.PT_container-detItems {
+  /* grid-template-columns: 0.3fr 40% repeat(2, 0.2fr) 1fr; */
+  /* grid-template-columns: 4% 13% 28% repeat(3, 6%) repeat(2, 6%) 18%; */ /*Alineado todo en una sola fila*/
+  grid-template: 1fr 0.1fr / 8% 12% 30% repeat(3, 9%) 20%;
+
+  grid-template-areas:
+    "autPT idItem detItem cantProd cantProdCambio unidMed btnProcess"
+    "autPT datesPT datesPT datesPT datesPT datesPT btnProcess";
+}
+
+.autPT {
+  grid-area: autPT;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#autPT {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.container_counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counterPT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  justify-self: center;
+  background: rgba(35, 45, 65, 0.8);
+  box-shadow: 0px 0px 1px 1px rgb(135, 136, 136);
+  margin-right: 3px;
+}
+
+.idItem {
+  grid-area: idItem;
+}
+
+.detItem {
+  grid-area: detItem;
+}
+.cantProd {
+  grid-area: cantProd;
+}
+.cantProdCambio {
+  grid-area: cantProdCambio;
+}
+.unidMed {
+  grid-area: unidMed;
+}
+.btnProcess {
+  grid-area: btnProcess;
+}
+
+.datesPT {
+  display: flex;
+  justify-content: space-between;
+  color: var(--red);
+  font-weight: bold;
+  grid-area: datesPT;
+  padding: 0 10%;
+  align-items: center;
+}
+
+.datesPT span {
+  display: inherit;
+  width: 50%;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.datesPT span p {
+  width: 50%;
+}
+.datesPT span label {
+  margin: 0;
+}
+.MP_container {
+  grid-template-columns: 18% 33% repeat(3, 8%) 20%;
+}
+
+.MP_container-edit {
+  /* grid-template-columns: 0.5fr 1fr repeat(2, 0.2fr) 50%; */
+  grid-template-columns: 18% 50% repeat(2, 11%);
+}
+
+.MP_title {
+  background: #62779eea !important;
+}
+
+.MP_container--changeMP {
+  display: grid;
+  grid-template-columns: 15% 40% repeat(2, 10%);
+  align-items: center;
+  background: rgba(166, 199, 236, 0.5);
+  grid-column: 1/-1;
+}
+
+.MP_container--changeMP label {
+  font-weight: bold;
+}
+
+/*Para Lista inventario*/
+.lista_items_inven {
+  grid-template-columns: 15% 35% repeat(2, 7%) 10% 7% 15%;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.invenEdit {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: #232d41ea;
+}
+
+.invenEdit:hover {
+  text-decoration: none;
+}
+
+.invenEdit span {
+  text-align: left;
+}
+
+/*Clases para detalle de procesos*/
+.procesosEdit {
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+  box-shadow: inset 0px -4px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* grid-row: 1 / -1; */
+}
+
+.procesosEdit:hover {
+  background: rgba(64, 192, 87, 1);
+  color: white;
+  border-radius: 0;
+}
+
+.listProcesos {
+  /* background: rgba(198, 255, 233, 0.8); */
+  /* background: linear-gradient(135deg, #fefccc 0%, #3d75dc 100%); */
+  background: rgb(61, 117, 220, 0.9);
+  width: 100%;
+  list-style: none;
+  border: 0;
+  margin: 0;
+  border-radius: 10px;
+  padding: 0;
+  color: white;
+}
+
+.listProcesos li:first-child {
+  background: RGB(255, 248, 91);
+  color: brown;
+}
+
+.listProcesos li {
+  display: grid;
+  grid-template-columns: auto 46% 25% 25%;
+  border-bottom: 1px solid rgb(65, 65, 190);
+  width: 100%;
+  align-items: center;
+}
+
+.listProcesos li span {
+  text-align: center;
+}
+
+.listProcesos li span input {
+  width: 90% !important;
+  border: 2px;
+  font-size: 0.8em;
+}
+
+/* .listProcesos li span input:hover {
+  box-shadow: 0 0.1em 5px 2px rgb(44, 185, 143);
+} */
+
+@media screen and (max-width: 768px) {
+  .listaOT_container {
+    max-width: 98%;
+    box-sizing: unset;
+    padding: 0.5em 0.2em;
+  }
+
+  .listaOt_item_container {
+    /* grid-template-columns: repeat(8, 1fr); */
+    grid-template-columns: repeat(2, 14%) 11% 27% repeat(2, 15%);
+    gap: 5px;
+  }
+
+  .PT_container {
+    grid-template-columns: 24% 25% repeat(3, 9%) repeat(2, 11%);
+    gap: 3px;
+    justify-content: flex-start;
+  }
+
+  .MP_container {
+    grid-template-columns: 20% 30% repeat(3, 9%) 20% !important;
+  }
+
+  .MP_container-edit {
+    grid-template-columns: 19% 45% repeat(2, 17%) !important;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+
+  .listaOt_item_edit {
+    grid-template-columns: repeat(2, 23%) repeat(2, 25%) !important;
+  }
+
+  .lista_items_inven {
+    grid-template-columns: 14% 30% repeat(2, 10%) 11% 8% 12%;
+  }
+
+  .PT_container-detItems {
+    grid-template: 1fr 0.1fr / 10% 15% 25% repeat(3, 9%) 20%;
+
+    grid-template-areas:
+      "autPT idItem detItem detItem cantProd cantProdCambio unidMed "
+      "autPT datesPT datesPT datesPT datesPT btnProcess btnProcess";
+
+    gap: 3px;
+  }
+
+  ol {
+    padding-inline-start: 5px;
+  }
+
+  span {
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .column2 {
+    grid-column: span 2;
+  }
+  .listaOt_item_container {
+    grid-template-columns: repeat(2, 23%) 15% 35%;
+    gap: 3px;
+  }
+
+  .PT_container,
+  .MP_container {
+    grid-template-columns: repeat(2, 49%) !important;
+  }
+
+  ol {
+    padding-inline-start: 7px;
+  }
+  .lista_items_inven {
+    grid-template-columns: 14% 30% repeat(2, 10%) 11% 8% 12%;
+  }
+
+  .MP_container--changeMP {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .PT_container-detItems {
+    grid-template: 1fr 0.1fr 0.1fr 0.1fr / 18% 22% 25% 25% !important;
+
+    grid-template-areas:
+      "autPT idItem detItem detItem"
+      " cantProd cantProd cantProdCambio cantProdCambio"
+      "datesPT datesPT datesPT datesPT"
+      "btnProcess btnProcess btnProcess btnProcess" !important;
+
+    gap: 3px !important;
+  }
+
+  .datesPT {
+    padding: 0;
+  }
+
+  .datesPT span {
+    flex-wrap: wrap;
+  }
+
+  .datesPT span p {
+    width: 100%;
+  }
+
+  .listProcesos li {
+    grid-template-columns: 50% 50%;
+  }
+}

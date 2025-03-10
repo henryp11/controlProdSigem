@@ -1,0 +1,327 @@
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background: rgb(228, 228, 228); */
+}
+
+.loginForm {
+  width: 30%;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: radial-gradient(rgba(111, 157, 214, 0), rgba(111, 157, 214, 1));
+  box-shadow: 0px 0px 5px 3px rgb(135, 136, 136);
+  box-sizing: unset;
+}
+
+.formTittle {
+  width: 100%;
+  text-align: center;
+  margin: 5px 0 !important;
+  color: #232d41ea;
+}
+
+.formUserPass,
+.formUserName {
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+
+.loginForm div label {
+  width: 30%;
+  font-weight: bold;
+  color: #232d41ea;
+  font-size: 1.1em;
+}
+
+.loginForm button {
+  margin: 0;
+  justify-self: center;
+}
+
+/* Formulario de Materias primas */
+
+.formMP {
+  display: flex;
+  width: auto;
+  padding: 6px;
+  flex-wrap: wrap;
+  background: rgb(233, 232, 232);
+  margin-bottom: 10px;
+  grid-column: span 4;
+}
+
+.formMP .formMP_elemets {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% auto;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.formMP .formMP_elemets:first-child input {
+  width: 20%;
+}
+
+.formMP .formMP_elemetsMP_Alter {
+  grid-template-columns: 15% 40% repeat(2, 10%);
+  background: rgba(166, 199, 236, 0.5);
+}
+.formMP_elemetsMP_Alter label {
+  margin: 0;
+  color: var(--red) !important;
+}
+
+.formMP_elemetsMP_Alter span {
+  text-align: left;
+  color: var(--blue);
+}
+
+.formMP label {
+  font-weight: bold;
+  margin-right: 2px;
+  color: #e15c45;
+}
+
+.formMP .formMP_elemets:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#showMpAlter {
+  box-shadow: inset 0 0.1em rgb(0 0 0 / 50%);
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+  color: var(--danger);
+  font-weight: bold;
+}
+
+#showMpAlter input {
+  margin-left: 15px;
+  transform: scale(2);
+}
+
+.btn_container button,
+.btnCustomCancel {
+  display: contents;
+}
+
+/*Formulario edición*/
+
+.btn_container button span {
+  font-size: 3em;
+  transition: 0.15s ease;
+  box-shadow: inset 0 -0.1em rgb(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.btn_container .btnCustomCancel span {
+  font-size: 3em;
+  transition: 0.15s ease;
+  box-shadow: inset 0 -0.1em rgb(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.btn_container button:nth-of-type(1) span {
+  color: RGB(102, 168, 15);
+}
+
+.btn_container button:nth-of-type(1) span:hover {
+  color: rgb(16, 16, 180);
+}
+
+.btn_container a:nth-of-type(1) span {
+  color: crimson;
+}
+
+.btn_container a:nth-of-type(1) span:hover {
+  color: var(--red);
+}
+
+/* Estilos para dropDown dentro de formulario  */
+
+.dropDownMP {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 18% 80%;
+  gap: 5px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 7px 7px;
+  box-shadow: inset 0 -0.1em rgb(0 0 0 / 50%);
+}
+
+.dropDownMP_content {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 4px;
+}
+
+.dropDownMP_content button {
+  width: 30%;
+  justify-self: center;
+}
+
+.dropdown {
+  align-self: flex-start;
+}
+
+.dropDownMP_content p {
+  justify-self: flex-start;
+  align-self: center;
+  margin: 0;
+  width: 100%;
+}
+
+.dropDownMP--containerCantMP,
+.dropDownMP--containerNameMP {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+  gap: 5px;
+}
+
+.dropDownMP--containerNameMP p:last-child {
+  background: var(--blue);
+  color: var(--white);
+  margin-bottom: 3px;
+}
+
+.dropDownMP--containerCantMP p {
+  background: var(--blue);
+  color: var(--white);
+  margin-bottom: 3px;
+}
+
+.dropDownMP--containerCantMP .inputUser {
+  padding: 0;
+  border-radius: 0;
+}
+
+.dropdown-menu {
+  display: grid !important;
+  grid-template-columns: 100% !important;
+  background: #6c757d !important;
+  position: absolute;
+  z-index: 1;
+  will-change: transform;
+  top: -5% !important ;
+  left: -10% !important ;
+  transform: translate3d(38px, -2930px, 0px);
+  width: 220% !important;
+}
+
+.dropdown-item {
+  border-left: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+  width: 100% !important;
+  white-space: normal !important;
+  padding: 0.25rem 0.25rem !important;
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  background: var(--blue) !important;
+  color: var(--white) !important;
+}
+
+.inputAutoriza {
+  transform: scale(2.3);
+  box-shadow: 0px 0px 3px 1px rgb(135, 136, 136);
+  background: rgb(231, 231, 231);
+  justify-self: center;
+}
+
+/* Media query's */
+
+@media screen and (max-width: 985px) {
+  .loginForm {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .formMP {
+    grid-column: span 4;
+  }
+
+  .formMP .formMP_elemets {
+    grid-template-columns: 20% auto;
+  }
+
+  .formMP .formMP_elemetsMP_Alter {
+    grid-template-columns: 20% 50% repeat(2, 15%);
+  }
+
+  .loginForm {
+    width: 60%;
+  }
+
+  .dropdown-menu {
+    left: 0 !important ;
+    /* grid-template-columns: repeat(3, 0.5fr) !important;
+    width: 530% !important; */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .loginForm {
+    width: 95%;
+    padding: 2px;
+    height: 50%;
+    margin-top: 2em;
+  }
+
+  .formUserPass,
+  .formUserName {
+    margin: 5px 0;
+    grid-template-columns: 1fr;
+  }
+
+  .dropDownMP {
+    /* grid-template-columns: 24% 79%; */
+    grid-template-columns: 100%;
+    gap: 3px;
+  }
+
+  .btn-secondary {
+    width: 100% !important;
+    padding: 4px !important;
+  }
+
+  .dropdown-menu {
+    left: -5% !important ;
+    width: 100% !important;
+    /* transform: translate3d(0px, -152px, 0px) !important; */
+    bottom: auto !important;
+    /* grid-template-columns: repeat(2, 0.5fr) !important; */
+  }
+
+  .dropDownMP .show:last-child {
+    transform: translate3d(0px, -152px, 0px) !important;
+  }
+
+  /* .dropDownMP--containerNameMP {
+    grid-template-columns: 80%;
+  }
+
+  .dropDownMP--containerCantMP {
+    grid-template-columns: 100%;
+  } */
+
+  .formMP .formMP_elemetsMP_Alter {
+    grid-template-columns: 20% 45% repeat(2, 17%);
+  }
+}

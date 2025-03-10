@@ -1,0 +1,545 @@
+{
+  "produccion": [
+    {
+      "id": "OT003311",
+      "idPed": "00002740",
+      "idCli": "C0099",
+      "nomCli": "PikKa",
+      "fechaIni": "15-01-2021",
+      "fechaProy": "15-01-2021",
+      "observOT": "Onbservac test",
+      "PT": [
+        {
+          "itemPT": "E1PROW27F3-A001",
+          "nombrePT": "ET.TQW PROPALCOTE CIRC. 1.5x- F3 NC",
+          "cantPT": "100",
+          "unidMed": "Milesxz",
+          "idFamilia": "006",
+          "cantReemplaza": "10",
+          "fechaInicio": "",
+          "fechaFinal": "",
+          "cambiosOK": true,
+          "MP": [
+            {
+              "idMP": "ARTR8.9-M",
+              "nombreMP": "Papel termico recubierto arc 8.9",
+              "cantPlanMP": "0.90",
+              "unidMedMP": "Rollo",
+              "cantReal": "44",
+              "observMP": "prueba Cambio MP",
+              "action": "",
+              "idMPAlter": "ARTR7.1",
+              "descripMPAlter": "Papel termico recubierto arc 7.1",
+              "cantAlter": "33",
+              "MP_Alternas": [
+                {
+                  "idMP": "ARTR8.8-M",
+                  "nombreMP": "Papel termico 8.3",
+                  "cantPlanMP": "0.90"
+                },
+                {
+                  "idMP": "ARTR8.7-M",
+                  "nombreMP": "Papel termico recubierto arc 7",
+                  "cantPlanMP": "0.70"
+                },
+                {
+                  "idMP": "ARTR8.6-M",
+                  "nombreMP": "Papel termico recubierto arc 6",
+                  "cantPlanMP": "0.50"
+                }
+              ]
+            }
+          ],
+          "procesos": [
+            {
+              "idProceso": "P0000",
+              "nombreProceso": "Selección Material",
+              "prioridad": "1",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            },
+            {
+              "idProceso": "P0001",
+              "nombreProceso": "Impresion",
+              "prioridad": "2",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            },
+            {
+              "idProceso": "P0002",
+              "nombreProceso": "Troquelado",
+              "prioridad": "3",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            }
+          ]
+        },
+        {
+          "itemPT": "E1PROW27F3-A991",
+          "nombrePT": "ET.TQW PROPALCOTE CIRC. 1.5x- F3 NC",
+          "cantPT": "200",
+          "unidMed": "otros",
+          "idFamilia": "006",
+          "cantReemplaza": "10",
+          "fechaInicio": "",
+          "fechaFinal": "2021-11-08",
+          "cambiosOK": false,
+          "MP": [
+            {
+              "idMP": "ARTR8.9-M",
+              "nombreMP": "Papel termico recubierto arc 8.9",
+              "cantPlanMP": "0.90",
+              "unidMedMP": "Rollo",
+              "cantReal": "1",
+              "observMP": "prueba final cambio",
+              "action": "",
+              "idMPAlter": "ARPOLIB8.2",
+              "descripMPAlter": "Papel poliblancobri arc 8.2",
+              "cantAlter": "5",
+              "MP_Alternas": [
+                {
+                  "idMP": "ARTR8.8-M",
+                  "nombreMP": "Papel termico 8.3",
+                  "cantPlanMP": "0.90"
+                },
+                {
+                  "idMP": "ARTR8.7-M",
+                  "nombreMP": "Papel termico recubierto arc 7",
+                  "cantPlanMP": "0.70"
+                },
+                {
+                  "idMP": "ARTR8.6-M",
+                  "nombreMP": "Papel termico recubierto arc 6",
+                  "cantPlanMP": "0.50"
+                }
+              ]
+            }
+          ],
+          "procesos": [
+            {
+              "idProceso": "P0000",
+              "nombreProceso": "Selección Material",
+              "prioridad": "1",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            },
+            {
+              "idProceso": "P0001",
+              "nombreProceso": "Impresion",
+              "prioridad": "2",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            },
+            {
+              "idProceso": "P0002",
+              "nombreProceso": "cambio proceso",
+              "prioridad": "3",
+              "fechaIniProc": "2021-11-15T10:51",
+              "fechaFinProc": "",
+              "action": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OT003312",
+      "idPed": "00002750",
+      "idCli": "C0100",
+      "nomCli": "Cliente Prueba",
+      "fechaIni": "15-01-2021",
+      "fechaProy": "15-01-2021",
+      "observOT": "Observac test2",
+      "PT": [
+        {
+          "itemPT": "E1PROW27F1-A000",
+          "nombrePT": "ET.TQW PROPALCOTE CIRC. 1.5x- F3 NC",
+          "cantPT": "150",
+          "unidMed": "Milesxz",
+          "idFamilia": "006",
+          "cantReemplaza": "",
+          "fechaInicio": "",
+          "fechaFinal": "",
+          "cambiosOK": "",
+          "MP": [
+            {
+              "idMP": "ARTR10-M",
+              "nombreMP": "Papel termico recubierto arc 10",
+              "cantPlanMP": "0.75",
+              "unidMedMP": "Rollo",
+              "cantReal": "",
+              "observMP": "",
+              "action": "",
+              "idMPAlter": "",
+              "descripMPAlter": "",
+              "cantAlter": "",
+              "MP_Alternas": [
+                {
+                  "idMP": "ARTR8.8-M",
+                  "nombreMP": "Papel termico 8.3",
+                  "cantPlanMP": "0.90"
+                },
+                {
+                  "idMP": "ARTR8.7-M",
+                  "nombreMP": "Papel termico recubierto arc 7",
+                  "cantPlanMP": "0.70"
+                },
+                {
+                  "idMP": "ARTR8.6-M",
+                  "nombreMP": "Papel termico recubierto arc 6",
+                  "cantPlanMP": "0.50"
+                }
+              ]
+            }
+          ],
+          "procesos": [
+            {
+              "idProceso": "P0000",
+              "nombreProceso": "Selección Material",
+              "prioridad": "1",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            },
+            {
+              "idProceso": "P0001",
+              "nombreProceso": "Impresion",
+              "prioridad": "2",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            },
+            {
+              "idProceso": "P0002",
+              "nombreProceso": "Troquelado",
+              "prioridad": "3",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OT003313",
+      "idPed": "00002700",
+      "idCli": "C0150",
+      "nomCli": "Rosa Prima",
+      "fechaIni": "15-01-2021",
+      "fechaProy": "15-01-2021",
+      "observOT": "Onbservac test3",
+      "PT": [
+        {
+          "itemPT": "E1TROW27F3-A005",
+          "nombrePT": "ET.TQW PROPALCOTE CIRC. 1.5x- F3 3COL",
+          "cantPT": "100",
+          "unidMed": "Milesxz",
+          "idFamilia": "006",
+          "cantReemplaza": "",
+          "fechaInicio": "",
+          "fechaFinal": "",
+          "cambiosOK": "",
+          "MP": [
+            {
+              "idMP": "ARTR5.5-M",
+              "nombreMP": "Papel termico recubierto arc 5",
+              "cantPlanMP": "0.90",
+              "unidMedMP": "Rollo",
+              "cantReal": "",
+              "observMP": "",
+              "action": "",
+              "idMPAlter": "",
+              "descripMPAlter": "",
+              "cantAlter": "",
+              "MP_Alternas": [
+                {
+                  "idMP": "ARTR8.8-M",
+                  "nombreMP": "Papel termico 8.3",
+                  "cantPlanMP": "0.90"
+                },
+                {
+                  "idMP": "ARTR8.7-M",
+                  "nombreMP": "Papel termico recubierto arc 7",
+                  "cantPlanMP": "0.70"
+                },
+                {
+                  "idMP": "ARTR8.6-M",
+                  "nombreMP": "Papel termico recubierto arc 6",
+                  "cantPlanMP": "0.50"
+                }
+              ]
+            }
+          ],
+          "procesos": [
+            {
+              "idProceso": "P0000",
+              "nombreProceso": "Selección Material",
+              "prioridad": "1",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            },
+            {
+              "idProceso": "P0001",
+              "nombreProceso": "Impresion",
+              "prioridad": "2",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            },
+            {
+              "idProceso": "P0002",
+              "nombreProceso": "Troquelado",
+              "prioridad": "3",
+              "fechaIniProc": "",
+              "fechaFinProc": "",
+              "action": ""
+            }
+          ]
+        },
+        {
+          "itemPT": "E1PROW27F3-A991",
+          "nombrePT": "ET.TQW PROPALCOTE CIRC. 1.5x- F3 NC",
+          "cantPT": "100",
+          "unidMed": "otros",
+          "idFamilia": "006",
+          "cantReemplaza": "",
+          "fechaInicio": "",
+          "fechaFinal": "",
+          "cambiosOK": "1",
+          "MP": [
+            {
+              "idMP": "ARTR8.9-M",
+              "nombreMP": "Papel termico recubierto arc 8.9",
+              "cantPlanMP": "0.90",
+              "unidMedMP": "Rollo",
+              "cantReal": "1",
+              "observMP": "prueba final cambio",
+              "action": "",
+              "idMPAlter": "ARPOLIB8.2",
+              "descripMPAlter": "Papel poliblancobri arc 8.2",
+              "cantAlter": "5",
+              "MP_Alternas": [
+                {
+                  "idMP": "ARTR8.8-M",
+                  "nombreMP": "Papel termico 8.3",
+                  "cantPlanMP": "0.90"
+                },
+                {
+                  "idMP": "ARTR8.7-M",
+                  "nombreMP": "Papel termico recubierto arc 7",
+                  "cantPlanMP": "0.70"
+                },
+                {
+                  "idMP": "ARTR8.6-M",
+                  "nombreMP": "Papel termico recubierto arc 6",
+                  "cantPlanMP": "0.50"
+                }
+              ]
+            }
+          ],
+          "procesos": [
+            {
+              "idProceso": "P0000",
+              "nombreProceso": "Selección Material",
+              "prioridad": "1",
+              "fechaIniProc": "",
+              "fechaFinProc": ""
+            },
+            {
+              "idProceso": "P0001",
+              "nombreProceso": "Impresion",
+              "prioridad": "2",
+              "fechaIniProc": "",
+              "fechaFinProc": ""
+            },
+            {
+              "idProceso": "P0002",
+              "nombreProceso": "Troquelado",
+              "prioridad": "3",
+              "fechaIniProc": "",
+              "fechaFinProc": ""
+            }
+          ]
+        },
+        {
+          "itemPT": "E1PROQ27F3-A991",
+          "nombrePT": "ET.TQW PROPALCOTE CIRC. 1.5x- F3 NC",
+          "cantPT": "100",
+          "unidMed": "otros",
+          "idFamilia": "006",
+          "cantReemplaza": "",
+          "fechaInicio": "",
+          "fechaFinal": "",
+          "cambiosOK": "",
+          "MP": [
+            {
+              "idMP": "ARTR8.9-M",
+              "nombreMP": "Papel termico recubierto arc 8.9",
+              "cantPlanMP": "0.90",
+              "unidMedMP": "Rollo",
+              "cantReal": "",
+              "observMP": "",
+              "action": "",
+              "idMPAlter": "",
+              "descripMPAlter": "",
+              "cantAlter": "",
+              "MP_Alternas": [
+                {
+                  "idMP": "ARTR8.8-M",
+                  "nombreMP": "Papel termico 8.3",
+                  "cantPlanMP": "0.90"
+                },
+                {
+                  "idMP": "ARTR8.7-M",
+                  "nombreMP": "Papel termico recubierto arc 7",
+                  "cantPlanMP": "0.70"
+                },
+                {
+                  "idMP": "ARTR8.6-M",
+                  "nombreMP": "Papel termico recubierto arc 6",
+                  "cantPlanMP": "0.50"
+                }
+              ]
+            }
+          ],
+          "procesos": [
+            {
+              "idProceso": "P0000",
+              "nombreProceso": "Selección Material",
+              "prioridad": "1",
+              "fechaIniProc": "",
+              "fechaFinProc": ""
+            },
+            {
+              "idProceso": "P0001",
+              "nombreProceso": "Impresion",
+              "prioridad": "2",
+              "fechaIniProc": "",
+              "fechaFinProc": ""
+            },
+            {
+              "idProceso": "P0002",
+              "nombreProceso": "Troquelado",
+              "prioridad": "3",
+              "fechaIniProc": "",
+              "fechaFinProc": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "inventario": [
+    {
+      "id": "E1TRM55F1-A000",
+      "descrip": "ET.TQM TERMICO RECUBIERTO RECT. 7.6x10.2 F1 NC",
+      "cantActual": "500",
+      "unidMed": "Miles",
+      "cantFisica": "",
+      "observInv": "",
+      "fechaRegistro": ""
+    },
+    {
+      "id": "E1TRM55F1-A020",
+      "descrip": "ET.TQM TERMICO RECUBIERTO RECT. 7.6x10.2 F1 1C",
+      "cantActual": "30",
+      "unidMed": "Miles",
+      "cantFisica": "28",
+      "observInv": "",
+      "fechaRegistro": ""
+    },
+    {
+      "id": "E1TRM55F1-A011",
+      "descrip": "ET.TQM TERMICO RECUBIERTO RECT. 7.6x10.2 F1 2C",
+      "cantActual": "100",
+      "unidMed": "Miles",
+      "cantFisica": "",
+      "observInv": "",
+      "fechaRegistro": ""
+    }
+  ],
+  "materiasPrimas": [
+    {
+      "id": "ANDTR10.8",
+      "nombreMP": "Papel termico recubierto andi 10.8",
+      "idFamilia": "0000"
+    },
+    {
+      "id": "ARTR7.1",
+      "nombreMP": "Papel termico recubierto arc 7.1",
+      "idFamilia": "0000"
+    },
+    {
+      "id": "ARTR11.5",
+      "nombreMP": "Papel termico recubierto arc 11.5",
+      "idFamilia": "0000"
+    },
+    {
+      "id": "FLXTTN10.7",
+      "nombreMP": "Papel termotransn flx 10.7",
+      "idFamilia": "0001"
+    },
+    {
+      "id": "ARTTN14.6",
+      "nombreMP": "Papel termotransn arc 14.6",
+      "idFamilia": "0001"
+    },
+    {
+      "id": "ARPOLIM6.2",
+      "nombreMP": "Papel poliblancomate arc 6.2",
+      "idFamilia": "0004"
+    },
+    {
+      "id": "ARTR6.7",
+      "nombreMP": "Papel termico recubierto arc 6.7",
+      "idFamilia": "0005"
+    },
+    {
+      "id": "ARPRO21.8",
+      "nombreMP": "Papel propalcote arc arc 21.8",
+      "idFamilia": "0006"
+    },
+    {
+      "id": "ARPRO8.7",
+      "nombreMP": "Papel propalcote arc arc 8.7",
+      "idFamilia": "0006"
+    },
+    {
+      "id": "ARPOLIB13.5",
+      "nombreMP": "Papel poliblancobri arc 13.5",
+      "idFamilia": "0007"
+    },
+    {
+      "id": "ARPOLIB8.0",
+      "nombreMP": "Papel poliblancobri arc 8.0",
+      "idFamilia": "0007"
+    },
+    {
+      "id": "ETIRRBB-110X74",
+      "nombreMP": "RIBBON 110X74M CERA PREMIUM",
+      "idFamilia": "0010"
+    },
+    {
+      "id": "ANTR9.8",
+      "nombreMP": "Papel termico recubierto andi 9.8",
+      "idFamilia": "0010"
+    },
+    {
+      "id": "ARPOLIB8.2",
+      "nombreMP": "Papel poliblancobri arc 8.2",
+      "idFamilia": "0011"
+    },
+    {
+      "id": "ARPOLIB14.0",
+      "nombreMP": "Papel poliblancobri arc 14.0",
+      "idFamilia": "0011"
+    }
+  ]
+}
