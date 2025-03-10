@@ -23,5 +23,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/estructuras_json
-localhost.*
+#tests locales
+estructuras_json
+certificados
+localhost.crt
+localhost.key
