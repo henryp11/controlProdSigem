@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from "react";
-import "../styles/forms.css";
+import React, { useState, useEffect } from 'react';
+import '../styles/forms.css';
 import {
   Dropdown,
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
-} from "reactstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import api from "../api";
-import Cookies from "universal-cookie";
-import { Button, Popover, PopoverBody } from "reactstrap";
+} from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import api from '../api';
+import Cookies from 'universal-cookie';
+import { Button, Popover, PopoverBody } from 'reactstrap';
 // import Loading from "../components/Loading";
-import MiniLoad from "../components/MiniLoad";
-import Error from "../components/Loading";
+import MiniLoad from '../components/MiniLoad';
+import Error from '../components/Loading';
 const cookies = new Cookies();
-let baseurl = cookies.get("baseUrl");
+let baseurl = cookies.get('baseUrl');
 
 function DropdownMP(props) {
   const { idOrden, idPT, idMP, formValuesFinal } = props;
   const [dropdown, setDropdown] = useState(false);
-  const [nombreMP, setTexto] = useState("");
-  const [idMPAlter, setIdMPAlter] = useState("");
+  const [nombreMP, setTexto] = useState('');
+  const [idMPAlter, setIdMPAlter] = useState('');
   const [cantCambio, setCantCambio] = useState(0);
   const [dataMP, setDataMP] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -60,7 +60,7 @@ function DropdownMP(props) {
       // Nuevo funcionamiento para traer materias primas relacionadas al producto terminado a cambiar
       const response = await fetch(
         `${baseurl}/getMPData.php?p1=${cookies.get(
-          "token"
+          'token'
         )}&p2=${idPT}&p3=${idMP}`
       );
       console.log(response);
@@ -119,9 +119,9 @@ function DropdownMP(props) {
 
   if (loading === false && dataMP.length === 0) {
     return (
-      <div className="alerts">
-        {`Este item [${idPT}], no posee materia prima alterna, asignarla
-        previamente dentro de SiGeM `}
+      <div className='alerts'>
+        {`El Producto Terminado [${idPT}], no posee materia prima alterna, debe asignarla
+        previamente dentro de SiGeM`}
       </div>
     );
   }
@@ -132,15 +132,15 @@ function DropdownMP(props) {
 
   return (
     <React.Fragment>
-      <div className="dropDownMP">
-        <Dropdown isOpen={dropdown} toggle={openCloseDrop} direction="up">
+      <div className='dropDownMP'>
+        <Dropdown isOpen={dropdown} toggle={openCloseDrop} direction='up'>
           <DropdownToggle caret>Elegir MP</DropdownToggle>
           <DropdownMenu>
             {dataMP.map((item) => {
               return (
                 <DropdownItem
                   key={item.id}
-                  name="nameMP"
+                  name='nameMP'
                   onClick={() => {
                     setTexto(item.nombreMP);
                     setIdMPAlter(item.id);
@@ -152,28 +152,28 @@ function DropdownMP(props) {
             })}
           </DropdownMenu>
         </Dropdown>
-        <div className="dropDownMP_content">
-          <div className="dropDownMP--containerNameMP">
-            <p>{nombreMP || "..."}</p>
+        <div className='dropDownMP_content'>
+          <div className='dropDownMP--containerNameMP'>
+            <p>{nombreMP || '...'}</p>
             <p>
               {formValuesFinal.PT[
                 formValuesFinal.PT.map((item) => item.itemPT).indexOf(idPT)
-              ].MP[0].idMPAlter !== "" &&
+              ].MP[0].idMPAlter !== '' &&
                 formValuesFinal.PT[
                   formValuesFinal.PT.map((item) => item.itemPT).indexOf(idPT)
                 ].MP[0].descripMPAlter}
             </p>
           </div>
-          <div className="dropDownMP--containerCantMP">
+          <div className='dropDownMP--containerCantMP'>
             <input
-              className="inputUser"
-              type="number"
-              name="cantCambio"
+              className='inputUser'
+              type='number'
+              name='cantCambio'
               onChange={handleChange}
             />
             {formValuesFinal.PT[
               formValuesFinal.PT.map((item) => item.itemPT).indexOf(idPT)
-            ].MP[0].cantAlter !== "" && (
+            ].MP[0].cantAlter !== '' && (
               <p>
                 {
                   formValuesFinal.PT[
@@ -185,15 +185,15 @@ function DropdownMP(props) {
           </div>
           <Button
             onClick={updateMpAlter}
-            className="btnCustom btnCustom_change"
-            id="Popover1"
+            className='btnCustom btnCustom_change'
+            id='Popover1'
           >
             Cambiar
           </Button>
           <Popover
-            placement="right"
+            placement='right'
             isOpen={popoverOpen}
-            target="Popover1"
+            target='Popover1'
             toggle={toggle}
           >
             <PopoverBody>

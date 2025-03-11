@@ -8,8 +8,9 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.5em;
-  padding: 1em 0.5em;
+  padding: 0.5em;
   text-align: center;
+  font-size: 14px;
 }
 
 ol {
@@ -40,7 +41,8 @@ span {
 }
 
 .listaPT_item {
-  background: rgb(231, 231, 231);
+  /* background: rgb(231, 231, 231); */
+  background: rgba(0, 123, 255, 0.4);
 }
 
 /* Indicado de bloqueo de campos */
@@ -81,8 +83,8 @@ span {
   grid-template: 1fr 0.1fr / 8% 12% 30% repeat(3, 9%) 20%;
 
   grid-template-areas:
-    "autPT idItem detItem cantProd cantProdCambio unidMed btnProcess"
-    "autPT datesPT datesPT datesPT datesPT datesPT btnProcess";
+    'autPT idItem detItem cantProd cantProdCambio unidMed btnProcess'
+    'autPT datesPT datesPT datesPT datesPT datesPT btnProcess';
 }
 
 .autPT {
@@ -266,6 +268,7 @@ span {
 
 .listProcesos li span {
   text-align: center;
+  font-size: medium;
 }
 
 .listProcesos li span input {
@@ -318,8 +321,8 @@ span {
     grid-template: 1fr 0.1fr / 10% 15% 25% repeat(3, 9%) 20%;
 
     grid-template-areas:
-      "autPT idItem detItem detItem cantProd cantProdCambio unidMed "
-      "autPT datesPT datesPT datesPT datesPT btnProcess btnProcess";
+      'autPT idItem detItem detItem cantProd cantProdCambio unidMed '
+      'autPT datesPT datesPT datesPT datesPT btnProcess btnProcess';
 
     gap: 3px;
   }
@@ -362,10 +365,10 @@ span {
     grid-template: 1fr 0.1fr 0.1fr 0.1fr / 18% 22% 25% 25% !important;
 
     grid-template-areas:
-      "autPT idItem detItem detItem"
-      " cantProd cantProd cantProdCambio cantProdCambio"
-      "datesPT datesPT datesPT datesPT"
-      "btnProcess btnProcess btnProcess btnProcess" !important;
+      'autPT idItem detItem detItem'
+      ' cantProd cantProd cantProdCambio cantProdCambio'
+      'datesPT datesPT datesPT datesPT'
+      'btnProcess btnProcess btnProcess btnProcess' !important;
 
     gap: 3px !important;
   }

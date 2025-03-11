@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,7 +34,8 @@ h1 {
   border-bottom: 1px solid #232d41ea;
   width: 85%;
   margin: 0 auto;
-  margin-top: 0.5em !important;
+  margin-top: 0.2em !important;
+  font-size: 1.7em !important;
 }
 
 .btnCustom {
@@ -43,7 +44,7 @@ h1 {
   margin-right: 15px;
   padding: 11px;
   color: white;
-  font-size: medium;
+  font-size: 14px;
   font-weight: bolder;
   outline: none;
   border: none;
@@ -122,19 +123,18 @@ h1 {
 
 .search_container label {
   font-weight: bold;
-  /* margin-right: 10px; */
   font-size: 24px;
   color: var(--info);
 }
 
 .search_container input {
-  height: 40px;
+  height: 30px;
   width: 100%;
   padding: 4px;
   border-radius: 10px;
   outline: none;
   border: 1px solid #232d41ea;
-  font-size: 1.2em;
+  font-size: 1em;
   transition: 0.2s ease;
   border: 1px solid rgba(35, 45, 65, 0.5);
   /* box-sizing: unset; */
@@ -161,15 +161,21 @@ h1 {
 }
 
 .otWrap {
-  padding: 5px;
+  padding: 7px;
   font-weight: bold;
   font-size: 1em;
   background: rgba(240, 191, 86, 0.8);
+  box-shadow: inset 0 -6px 3px 0px rgba(35, 45, 65, 0.5);
   outline: none;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   transition: 0.15s ease;
+}
+
+.otWrap:hover {
+  box-shadow: inset 0 -4px 2px 0px rgba(35, 45, 65, 0.5);
+  border-radius: 0;
 }
 
 .otWrap:active {
@@ -178,10 +184,11 @@ h1 {
 
 .editOT_title {
   color: rgb(25, 113, 194);
-  width: 60%;
+  width: 80%;
   border-bottom: 1px solid green;
   text-align: center;
   margin: 10px auto;
+  font-size: 1.2em;
 }
 
 .valueEdit {
@@ -260,10 +267,6 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: xx-large !important;
-  }
-
   .search_container {
     grid-template-columns: 25px auto 50px;
   }
@@ -272,7 +275,7 @@ h1 {
     font-size: 1em;
   }
   .editOT_title {
-    font-size: x-large;
+    width: 90%;
   }
 
   .search {
